@@ -55,7 +55,7 @@ go run main.go -t $BOT_TOKEN
 - test connection command
 - expected answer
   ```
-  Hi Universe!
+  "Hi " + username + " ! :smiley:"
   ```
 
 ### !standup
@@ -74,5 +74,5 @@ go run main.go -t $BOT_TOKEN
 - test response when a user replies to **ANY** of the Bot's message
 - expected answer 
   ```
-  Thanks!
+  "Got this! See you later " + username + " :grin:"
   ```
