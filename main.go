@@ -63,8 +63,7 @@ func helloWorld(s *discordgo.Session, m *discordgo.MessageCreate) {
 	}
 
 	if m.Content == "!helloWorld" {
-		message := "Hi " + m.Author.Username + " ! :smiley:"
-		s.ChannelMessageSend(m.ChannelID, message)
+		s.ChannelMessageSend(m.ChannelID, "Got this! See you later "+m.Author.Username+" :grin:")
 	}
 
 }
@@ -93,8 +92,7 @@ func standupSession(s *discordgo.Session, m *discordgo.MessageCreate) {
 		st, _ := s.ChannelMessage(m.ChannelID, m.MessageReference.MessageID)
 
 		if st.Author.ID == s.State.User.ID {
-			message := "Got this! See you later " + m.Author.Username + " :grin:"
-			s.ChannelMessageSend(m.ChannelID, message)
+			s.ChannelMessageSend(m.ChannelID, "Got this! See you later "+m.Author.Username+" :grin:")
 		}
 	}
 }
