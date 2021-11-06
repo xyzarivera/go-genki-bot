@@ -28,7 +28,7 @@ This was created during my time as a student at [Code Chrysalis](https://github.
 - [DiscordGo](https://github.com/bwmarrin/discordgo) as main component to create the Discord bot
 - Heroku as cloud platform
 
-## Setup
+## ⚙️ Setup
 
 ### Pre-requisites
 
