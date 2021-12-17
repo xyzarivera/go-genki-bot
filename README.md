@@ -32,7 +32,9 @@ This was created during my time as a student at [Code Chrysalis](https://github.
 
 ### Pre-requisites
 
-Install Go version 1.17
+1. Install Go version 1.17
+2. Create a Bot Application from the [Discord Developer Portal](https://discord.com/developers/applications/)
+3. Get the bot's Token from the Developer Portal
 
 ### Clone project
 
@@ -47,6 +49,19 @@ git clone https://github.com/xyzarivera/go-genki-bot.git
 export BOT_TOKEN=<your bot token>
 go run main.go -t $BOT_TOKEN
 ```
+
+## 🚀 Deploying to Heroku
+
+- create Procfile
+  - use `worker` process type to accommodate websockets
+  - `worker: ./bin/go-genki-bot -t $TOKEN`
+  - set `TOKEN` in Heroku app's config vars 
+
+- add `go.mod` file to include this line above go version declaration
+  ``` 
+  // +heroku goVersion go1.17
+  go 1.17
+  ```
 
 ## 📖 Discord Bot Commands
 
