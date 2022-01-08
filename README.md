@@ -1,6 +1,6 @@
 # 🌟  Genki Bot
 
-An experimental Discord bot created while learning Golang as a language and deploying to Heroku.
+An experimental, yet deployable Discord chat bot created while learning Golang. 
 
 This was created during my time as a student at [Code Chrysalis](https://github.com/codechrysalis)
 
